@@ -17,7 +17,7 @@ import java.util.Date;
  * @date ${datetime}
  */
 @TableName("${tableName}")
-public class ${className}Entity implements Serializable {
+public class ${className} implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 #foreach ($column in $columns)
