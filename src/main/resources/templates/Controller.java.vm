@@ -59,7 +59,7 @@ public class ${className}Controller {
      */
     @RequestMapping("/save")
     @RequiresPermissions("${moduleName}:${pathName}:save")
-    public R save(@RequestBody ${className}Entity ${classname}){
+    public R save(@RequestBody ${className} ${classname}){
 			${classname}Service.insert(${classname});
 
         return R.ok();
@@ -70,7 +70,7 @@ public class ${className}Controller {
      */
     @RequestMapping("/update")
     @RequiresPermissions("${moduleName}:${pathName}:update")
-    public R update(@RequestBody ${className}Entity ${classname}){
+    public R update(@RequestBody ${className} ${classname}){
 			${classname}Service.updateById(${classname});
 
         return R.ok();
